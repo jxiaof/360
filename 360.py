@@ -1,5 +1,6 @@
 """
 2020年9月26日 360 kafka 数据转换问题
+思路: 设置和cpu相同数量进程池(4)并行,同时使用线程池(125)消费,转换数据,最大效率使用cpu.
 """
 import concurrent.futures
 import copy
